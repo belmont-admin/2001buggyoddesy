@@ -9,6 +9,7 @@ input.onButtonPressed(Button.B, function () {
             music.playTone(notes_freq[notes_name.indexOf(_2001_notes[index2])], _2001_beats[index2])
         }
         radio.sendNumber(0)
+        radio.sendString("black")
         basic.pause(500)
     }
 })
