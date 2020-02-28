@@ -5,6 +5,7 @@ input.onButtonPressed(Button.B, function () {
     for (let index = 0; index < 1; index++) {
         for (let index2 = 0; index2 <= _2001_beats.length - 1; index2++) {
             radio.sendString("" + (_2001_colours[index2]))
+            radio.sendNumber(_2001_moves[index2])
             music.playTone(notes_freq[notes_name.indexOf(_2001_notes[index2])], _2001_beats[index2])
         }
         basic.pause(500)
@@ -14,7 +15,6 @@ input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 2; index++) {
         for (let index1 = 0; index1 <= starwars_beats.length - 1; index1++) {
             radio.sendString("" + (starwars_colours[index1]))
-            radio.sendNumber(_2001_moves[index1])
             music.playTone(notes_freq[notes_name.indexOf(starwars_notes[index1])], starwars_beats[index1])
         }
         basic.pause(500)
