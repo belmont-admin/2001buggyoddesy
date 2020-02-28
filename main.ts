@@ -8,6 +8,7 @@ input.onButtonPressed(Button.B, function () {
             radio.sendNumber(_2001_moves[index2])
             music.playTone(notes_freq[notes_name.indexOf(_2001_notes[index2])], _2001_beats[index2])
         }
+        radio.sendNumber(0)
         basic.pause(500)
     }
 })
