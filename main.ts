@@ -38,8 +38,8 @@ basic.showLeds(`
     `)
 radio.setGroup(13)
 starwars_colours = ["red", "green", "yellow", "red", "yellow", "green", "red", "green", "yellow", "green", "red", "green", "yellow", "green", "red", "yellow"]
-_2001_colours = ["red", "blue", "green", "red", "blue", "green", "red", "blue", "green", "red", "blue", "green", "red", "blue", "green", "red", "blue", "green", "red", "blue", "green", "red", "blue", "green", "red", "blue", "green", "red", "blue", "green", "red", "blue", "green"]
-_2001_moves = [1, -1, 1, 1, 1, 2, 3, 2, 3, -1, 1, -1, -1, -1, 3, 2, 3, 2, 9, 0, 1, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+_2001_colours = ["red", "blue", "green", "yellow", "indigo", "orange", "purple", "blue", "green", "red", "violet", "yellow", "red", "blue", "green", "red", "blue", "green", "red", "blue", "green", "red", "blue", "green", "red", "blue", "green", "red", "blue", "green", "red", "blue", "green"]
+_2001_moves = [1, -1, 1, 1, 1, 2, 3, 2, 3, -1, 1, -1, -1, -1, 3, 2, 3, 2, 1, -1, 1, -1, 1, 3, 2, 3, 2, -1, 1, -1, 1, 2, 3]
 _2001_notes = ["C", "C", "E", "G", "G", "g", "g", "e", "e", "C", "C", "E", "G", "G", "g", "g", "f", "f", "B", "B", "D", "A", "A", "#", "G", "e", "c", "E", "E", "D", "A", "G", "C"]
 _2001_beats = [1000, 1000, 1000, 1000, 2000, 1000, 2000, 1000, 2000, 1000, 1000, 1000, 1000, 2000, 1000, 2000, 1000, 2000, 1000, 1000, 1000, 1000, 4000, 1000, 1000, 4000, 1000, 1000, 2000, 1000, 2000, 1000, 2000]
 starwars_notes = ["C", "G", "F", "E", "D", "c", "G", "F", "E", "D", "c", "G", "F", "E", "F", "D"]
