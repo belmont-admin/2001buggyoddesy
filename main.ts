@@ -1,4 +1,5 @@
 input.onButtonPressed(Button.B, function () {
+    radio.setGroup(200)
     for (let index = 0; index < 1; index++) {
         for (let index2 = 0; index2 <= _2001_beats.length - 1; index2++) {
             radio.sendString("" + (_2001_colours[index2]))
@@ -11,6 +12,7 @@ input.onButtonPressed(Button.B, function () {
     }
 })
 input.onButtonPressed(Button.A, function () {
+    radio.setGroup(1)
     for (let index = 0; index < 2; index++) {
         for (let index1 = 0; index1 <= starwars_beats.length - 1; index1++) {
             radio.sendString("" + (starwars_colours[index1]))
@@ -35,7 +37,6 @@ basic.showLeds(`
     . # # . .
     . # # . .
     `)
-radio.setGroup(13)
 starwars_colours = ["red", "green", "yellow", "red", "yellow", "green", "red", "green", "yellow", "green", "red", "green", "yellow", "green", "red", "yellow"]
 _2001_colours = ["red", "blue", "green", "yellow", "indigo", "orange", "purple", "blue", "green", "red", "violet", "yellow", "red", "violet", "green", "red", "blue", "orange", "purple", "blue", "green", "red", "yellow", "blue", "orange", "purple", "green", "violet", "orange", "blue", "green", "yellow", "indigo"]
 _2001_moves = [1, -1, 1, -1, 1, 2, -2, 2, -2, -1, 1, -1, 1, -1, -2, 2, -2, 2, 1, -1, 1, -1, 1, -2, 2, -2, 2, -1, 1, -1, 1, 2, -2]
