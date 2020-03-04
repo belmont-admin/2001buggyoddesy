@@ -1,10 +1,19 @@
+input.onButtonPressed(Button.AB, function () {
+    abort = !(abort)
+})
 input.onButtonPressed(Button.B, function () {
+    abort = false
     radio.setGroup(26)
     for (let index = 0; index < 1; index++) {
         for (let index2 = 0; index2 <= _2001_beats.length - 1; index2++) {
-            radio.sendString("" + (_2001_colours[index2]))
-            radio.sendNumber(_2001_moves[index2])
-            music.playTone(notes_freq[notes_name.indexOf(_2001_notes[index2])], _2001_beats[index2])
+            if (!(abort)) {
+                radio.sendString("" + (_2001_colours[index2]))
+                radio.sendNumber(_2001_moves[index2])
+                music.playTone(notes_freq[notes_name.indexOf(_2001_notes[index2])], _2001_beats[index2])
+            } else {
+                radio.sendNumber(0)
+                radio.sendString("black")
+            }
         }
         radio.sendNumber(0)
         radio.sendString("black")
@@ -30,6 +39,8 @@ let _2001_notes: string[] = []
 let _2001_moves: number[] = []
 let _2001_colours: string[] = []
 let starwars_colours: string[] = []
+let abort = false
+abort = false
 basic.showLeds(`
     . . # # .
     . . # . .
