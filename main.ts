@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.B, function () {
-    radio.setGroup(200)
+    radio.setGroup(26)
     for (let index = 0; index < 1; index++) {
         for (let index2 = 0; index2 <= _2001_beats.length - 1; index2++) {
             radio.sendString("" + (_2001_colours[index2]))
